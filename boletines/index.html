@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Los mejores gimnasios de Chilpancingo.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./font-awesome/css/all.css">
+  <link href="./assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/animate.css" />
+</head>
+
+<body>
+  <!-- Aquí va el comentario-->
+  <div class="container">
+    <div class="content animate__animated animate__fadeInDown">
+      <header>
+        <h1 class="logo"><img src="./assets/images/logo-gymspot.png"></h1>
+        <h3 class="title">Elige tu próximo destino de entrenamiento en Chilpancingo.</h3>
+      </header>
+      <table class="table">
+        <div class="containerx">
+          <span class="circle"><button class="btn-ordenar" onclick="ordenarPorCalificacion('asc')"><i
+                class="fa-regular fa-star"></i><i class="fa-solid fa-circle-down"></i></button>
+            <button class="btn-ordenar" onclick="ordenarPorCalificacion('desc')"><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-circle-up"></i></button></span>
+        </div>
+        <thead>
+          <th><i class="fa-solid fa-dumbbell"></i>Gym<i class="fa-solid fa-dumbbell"></i></th>
+          <th>Nombre</th>
+          <th>Ubicación</th>
+          <th>
+            Calificación
+          </th>
+          <th>Acciones</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="./assets/logos/logoAtleticoAmericano.jpg" class="logo-image"
+                alt="Gimansio Atlético Américano"></td>
+            <td>Gimnasio Atlético Américano</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/VpYX9kU16r8jhMep8'"> <i
+                class="fa-solid fa-location-dot"></i> Av. Juan N.
+              Álvarez Sur no. 17, Centro.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/sensei.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoHispanoGym.jpg" class="logo-image" alt="Hispano Gym"></td>
+            <td>Hispano Gym</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/pL7DSvWryTDgEkWc9'"> <i
+                class="fa-solid fa-location-dot"></i> ISSSTE 3-S, Ruffo
+              Figueroa.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/hispanogym.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoStarlife.png" class="logo-image" alt="StarLife Fitness Gym"></td>
+            <td>StarLife Fitness Gym</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/Udmx85pM8yGYMKKJ7'"> <i
+                class="fa-solid fa-location-dot"></i> Baltazar R. Leyva
+              Mancilla 5, Universal.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/starlife.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoF1rstgym.png" class="logo-image" alt="F1rst Gym"></td>
+            <td>F1rst Gym</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/FnKvwwAgLruiBfQ88'"> <i
+                class="fa-solid fa-location-dot"></i> Lázaro Cárdenas
+              52-Planta Alta, Universal.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/firstgym.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoLeonesGym.jpg" class="logo-image" alt="Leones Gym"></td>
+            <td>Leones Gym</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/dSnPydtKUZyvUi3QA'"> <i
+                class="fa-solid fa-location-dot"></i> Benito Juárez.
+            </td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/leonesgym.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoAcagym.jpg" class="logo-image" alt="Aca Gym"></td>
+            <td>Aca Gym</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/J9cALasdeoHi59pa9'"> <i
+                class="fa-solid fa-location-dot"></i> Altamirano 19,
+              Margarita Viguri.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star-half-stroke"></i></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/acagym.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoSpartacus.png" class="logo-image" alt="Gimansio Spartacus"></td>
+            <td>Gimnasio Spartacus</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/RXiCqArJMGfWKiuj6'"> <i
+                class="fa-solid fa-location-dot"></i> Miguel Hidalgo 11,
+              Centro.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/spartacusgym.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoTnt.jpg" class="logo-image" alt="Gimansio TNT"></td>
+            <td>Gimansio TNT</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/Go5DK4z1MtqFdBac8'"> <i
+                class="fa-solid fa-location-dot"></i> C. Juan Ruiz de
+              Alarcón 2, San Francisco.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/tnt.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoBodyMaster.jpg" class="logo-image" alt="Body Master Fitness Club">
+            </td>
+            <td>Body Master Fitness Club</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/RY1ZHXEg3dXMM54d9'"> <i
+                class="fa-solid fa-location-dot"></i> Lázaro Cárdenas
+              27, Loma Bonita.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/bodymaster.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoFCenter.png" class="logo-image" alt="FC Fitness Center"></td>
+            <td>FC Fitness Center</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/KSNYNkqTMy241b25A'"> <i
+                class="fa-solid fa-location-dot"></i> José Ma. Morelos y
+              Pavón 56, Santa Cruz.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/fcfitnessc.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoAnimalGym.jpg" class="logo-image" alt="Animal Gym"></td>
+            <td>Animal Gym</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/BiyXgZvthkudkk417'"> <i
+                class="fa-solid fa-location-dot"></i> Ignacio Zaragoza
+              99, San Antonio.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+            </td>
+            <td>
+              <a href="./gimnasios/animalgym.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoVivantGym.jpg" class="logo-image" alt="Vivant Gym"></td>
+            <td>Vivant Gym</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/3nha3Hd5u12ku4L99'"> <i
+                class="fa-solid fa-location-dot"></i> San Francisco.
+            </td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+            <td>
+              <a href="./gimnasios/vivantgym.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoSportFit.jpg" class="logo-image" alt="Sport-Fit Gym"></td>
+            <td>Sport-Fit Gym</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/ruaRand9VTZkis9q6'"> <i
+                class="fa-solid fa-location-dot"></i> Zihuatanejo 64,
+              Unidad Guerrerense.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/sportfit.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoZonaFitness.jpg" class="logo-image" alt="Zona Fitness"></td>
+            <td>Zona Fitness</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/4CAfw3UGCxFffp2x6'"> <i
+                class="fa-solid fa-location-dot"></i> C. Juan Ruiz de
+              Alarcón 86, Universal.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/zonafitness.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoCreaGym.jpg" class="logo-image" alt="CREA Gym"></td>
+            <td>CREA Gym</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/QugmLiYaTqmLQ3iU9'"> <i
+                class="fa-solid fa-location-dot"></i> Dr. Gabriel Leyva
+              Alarcón 13, Burocratas.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/creagym.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoUamGym.png" class="logo-image" alt="UAM Gym"></td>
+            <td>UAM Gym</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/7H1UKkPCWWCUQyMM7'"> <i
+                class="fa-solid fa-location-dot"></i> Av. René, Lic.
+              René Juárez Cisneros 2, Fracc.villa Moderna, Villa Moderna 1ra y 2da Secc.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/uamgym.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoExpertGym.jpg" class="logo-image" alt="Expert Gym"></td>
+            <td>Expert Gym</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/M2PgT3oWPNYp1adE6'"> <i
+                class="fa-solid fa-location-dot"></i> Odilon Figueroa
+              15, Lucia Alcocer de Figueroa.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/expertgym.html">Más Información</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/logos/logoClubVitality.jpg" class="logo-image" alt="Club Vitality"></td>
+            <td>Club Vitality</td>
+            <td class="ubicacion" onclick="location.href='https://maps.app.goo.gl/2JSuLYDxF1DGy8RS7'"> <i
+                class="fa-solid fa-location-dot"></i> Cuauhtémoc 7,
+              Huicacalli.</td>
+            <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></td>
+            <td>
+              <a href="./gimnasios/clubvitality.html">Más Información</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="./javascript/main.js">
+  </script>
+</body>
+
+</html>
